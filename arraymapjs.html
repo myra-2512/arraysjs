@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Multiply every number in array with 10:</p>
+    <p id="product-value"></p>
+    <script>
+        var numbers=[22,67,8,46,12,567];
+
+        function myFunction(num){
+            return num * 10;
+        }
+
+        var newarray = numbers.map(myFunction)
+        document.getElementById("product-value").innerHTML=newarray
+    </script>
+</body>
+</html>
